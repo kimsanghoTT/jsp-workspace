@@ -12,14 +12,15 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
-public class JSPUser {
+@NoArgsConstructor
+public class Hamburger {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	private String username;
-	private String useremail;
+	private String hname;
+	private int hprice;
+	private String hdescription;
 }
